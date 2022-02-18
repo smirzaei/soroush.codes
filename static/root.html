@@ -19,7 +19,7 @@
     :root {
       --nav-top-height: 50px;
       --nav-top-vertical-padding: 25px;
-      --nav-social-width: 75px;
+      --nav-social-width: 100px;
       color: #333;
       font-family: 'Cabin', 'Poppins', 'Noto Sans', sans-serif;
     }
@@ -70,7 +70,11 @@
 
     .hero {
       width: 100%;
-      padding: 0 4em;
+      padding: 0 15vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
     }
 
     .hero-text {
@@ -94,6 +98,10 @@
       width: 100%;
       text-align: center;
     }
+
+    section {
+      height: 100vh;
+    }
   </style>
 
   <link rel="preload" href="/svg/01_soroush_working_normal.svg" as="image" type="image/svg+xml" />
@@ -109,39 +117,43 @@
 
 <body>
   <div class="body-container">
-    <nav class="nav-top">
-      <div class="nav-top-left">
-        <a href="/">$ ~/</a>
-      </div>
-      <div class="nav-top-right">
-        <a href="#">me</a>
-        <a href="#">blog</a>
-      </div>
-    </nav>
-    <div class="page-container">
-      <nav class="nav-social">
-        <a href="https://github.com/smirzaei"><b class="fa-brands fa-github"></b></a>
-        <a href="https://gitlab.com/Soroush"><b class="fa-brands fa-gitlab"></b></a>
-        <a href="https://www.linkedin.com/in/soroush8"><b class="fa-brands fa-linkedin-in"></b></a>
-        <a href="https://angel.co/soroush-mirzaei"><b class="fa-brands fa-angellist"></b></a>
-        <a href="http://stackoverflow.com/users/980103/soroush-mirzaei"><b class="fa-brands fa-stack-overflow"></b></a>
-        <a href="https://www.producthunt.com/@soroush"><b class="fa-brands fa-product-hunt"></b></a>
-        <a href="https://twitter.com/SoroushCodes"><b class="fa-brands fa-twitter"></b></a>
-        <a href="https://medium.com/@soroush"><b class="fa-brands fa-medium"></b></a>
+    <section>
+      <nav class="nav-top">
+        <div class="nav-top-left">
+          <a href="/">$ ~/</a>
+        </div>
+        <div class="nav-top-right">
+          <a href="#">me</a>
+          <a href="#">blog</a>
+        </div>
       </nav>
-      <div class="hero">
-        <div class="hero-text">
-          Hello
-          <p class="hero-text-sub">
-            My name is Soroush and for the past ten years, I've been making all kinds of software which are being used
-            by millions of people.
-          </p>
-        </div>
-        <div class="hero-img">
-          <img id="illustration" width="725" src="/svg/01_soroush_working_normal.svg" />
+      <div class="page-container">
+        <nav class="nav-social">
+          <a href="https://github.com/smirzaei"><b class="fa-brands fa-github"></b></a>
+          <a href="https://gitlab.com/Soroush"><b class="fa-brands fa-gitlab"></b></a>
+          <a href="https://www.linkedin.com/in/soroush8"><b class="fa-brands fa-linkedin-in"></b></a>
+          <a href="https://angel.co/soroush-mirzaei"><b class="fa-brands fa-angellist"></b></a>
+          <a href="http://stackoverflow.com/users/980103/soroush-mirzaei"><b
+              class="fa-brands fa-stack-overflow"></b></a>
+          <a href="https://www.producthunt.com/@soroush"><b class="fa-brands fa-product-hunt"></b></a>
+          <a href="https://twitter.com/SoroushCodes"><b class="fa-brands fa-twitter"></b></a>
+          <a href="https://medium.com/@soroush"><b class="fa-brands fa-medium"></b></a>
+        </nav>
+        <div class="hero">
+          <div class="hero-text">
+            Hello
+            <p class="hero-text-sub">
+              My name is Soroush and for the past ten years, I've been making all kinds of software which are being used
+              by millions of people.
+            </p>
+          </div>
+          <div class="hero-img">
+            <img id="illustration" width="725" src="/svg/01_soroush_working_normal.svg" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <script>
       const illustrations = [
         "/svg/01_soroush_working_normal.svg",
