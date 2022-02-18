@@ -207,12 +207,12 @@
       const illustrationElem = document.getElementById("illustration");
 
       let currentItem = 0
-      // setInterval(() => {
-      //   const nextItem = (currentItem % illustrations.length) + 1;
-      //   illustrationElem.setAttribute("src", illustrations[nextItem - 1])
+      setInterval(() => {
+        const nextItem = (currentItem % illustrations.length) + 1;
+        illustrationElem.setAttribute("src", illustrations[nextItem - 1])
 
-      //   currentItem = nextItem;
-      // }, 1000)
+        currentItem = nextItem;
+      }, 1000)
 
     </script>
 </body>
