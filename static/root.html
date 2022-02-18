@@ -17,11 +17,42 @@
 
     body,
     :root {
+      color: #333;
+      font-family: 'Cabin', 'Poppins', 'Noto Sans', sans-serif;
+
       --nav-top-height: 50px;
       --nav-top-vertical-padding: 25px;
       --nav-social-width: 100px;
-      color: #333;
-      font-family: 'Cabin', 'Poppins', 'Noto Sans', sans-serif;
+      --illustration-width: 725px;
+      --hero-text-font-size: 4em;
+      --hero-text-sub-font-size: .5em;
+      --hero-horizontal-padding: 15vw;
+      --nav-social-display: flex;
+    }
+
+    @media (max-width: 450px) {
+
+      body,
+      :root {
+        --nav-social-width: 0px;
+        --illustration-width: 300px;
+        --hero-horizontal-padding: 5vw;
+
+        --nav-social-display: none;
+      }
+    }
+
+    @media (max-width: 400px) {
+
+      body,
+      :root {
+        --hero-text-font-size: 3em;
+        --nav-social-width: 0px;
+        --illustration-width: 200px;
+        --hero-horizontal-padding: 2vw;
+
+        --nav-social-display: none;
+      }
     }
 
     a {
@@ -50,8 +81,11 @@
     .nav-top-right {
       display: flex;
       justify-content: space-evenly;
-      width: 10%;
       font-size: 1em;
+    }
+
+    .nav-top-item {
+      padding: 0 15px;
     }
 
     .page-container {
@@ -61,7 +95,7 @@
 
     .nav-social {
       width: var(--nav-social-width);
-      display: flex;
+      display: var(--nav-social-display);
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
@@ -69,8 +103,7 @@
     }
 
     .hero {
-      width: 100%;
-      padding: 0 15vw;
+      padding: 0 var(--hero-horizontal-padding);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -83,12 +116,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 4em;
+      font-size: var(--hero-text-font-size);
       z-index: 1;
     }
 
     .hero-text-sub {
-      font-size: 2rem;
+      font-size: var(--hero-text-sub-font-size);
       text-align: center;
       z-index: 1;
     }
@@ -97,6 +130,10 @@
       margin-top: -40px;
       width: 100%;
       text-align: center;
+    }
+
+    #illustration {
+      width: var(--illustration-width);
     }
 
     section {
@@ -120,11 +157,11 @@
     <section>
       <nav class="nav-top">
         <div class="nav-top-left">
-          <a href="/">$ ~/</a>
+          <a class="nav-top-item" href="/">$ ~/</a>
         </div>
         <div class="nav-top-right">
-          <a href="#">me</a>
-          <a href="#">blog</a>
+          <a class="nav-top-item" href="#">me</a>
+          <a class="nav-top-item" href="#">blog</a>
         </div>
       </nav>
       <div class="page-container">
@@ -148,7 +185,7 @@
             </p>
           </div>
           <div class="hero-img">
-            <img id="illustration" width="725" src="/svg/01_soroush_working_normal.svg" />
+            <img id="illustration" src="/svg/01_soroush_working_normal.svg" />
           </div>
         </div>
       </div>
@@ -170,12 +207,12 @@
       const illustrationElem = document.getElementById("illustration");
 
       let currentItem = 0
-      setInterval(() => {
-        const nextItem = (currentItem % illustrations.length) + 1;
-        illustrationElem.setAttribute("src", illustrations[nextItem - 1])
+      // setInterval(() => {
+      //   const nextItem = (currentItem % illustrations.length) + 1;
+      //   illustrationElem.setAttribute("src", illustrations[nextItem - 1])
 
-        currentItem = nextItem;
-      }, 1000)
+      //   currentItem = nextItem;
+      // }, 1000)
 
     </script>
 </body>
