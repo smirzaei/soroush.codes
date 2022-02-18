@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Soroush Mirzaei</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+    integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+    body,
+    :root {
+      --nav-top-height: 50px;
+      --nav-top-vertical-padding: 25px;
+      --nav-social-width: 75px;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:visited {
+      color: inherit;
+    }
+
+    .body-container {
+      min-height: 100vh;
+    }
+
+    .nav-top {
+      height: var(--nav-top-height);
+      padding: var(--nav-top-vertical-padding) var(--nav-social-width);
+      font-family: 'Inconsolata', monospace;
+      font-weight: 600;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-top-right {
+      display: flex;
+      justify-content: space-evenly;
+      width: 10%;
+      font-size: 1em;
+    }
+
+    .page-container {
+      min-height: calc(100vh - var(--nav-top-height) - (var(--nav-top-vertical-padding) * 2));
+      display: flex;
+    }
+
+    .nav-social {
+      width: var(--nav-social-width);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1.5em;
+    }
+
+    .hero {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body-container">
+    <nav class="nav-top">
+      <div class="nav-top-left">
+        <a href="/">$ ~/</a>
+      </div>
+      <div class="nav-top-right">
+        <a href="#">me</a>
+        <a href="#">blog</a>
+      </div>
+    </nav>
+    <div class="page-container">
+      <nav class="nav-social">
+        <a href="#"><b class="fa-brands fa-github"></b></a>
+        <a href="#"><b class="fa-brands fa-gitlab"></b></a>
+        <a href="#"><b class="fa-brands fa-linkedin-in"></b></a>
+        <a href="#"><b class="fa-brands fa-angellist"></b></a>
+        <a href="#"><b class="fa-brands fa-stack-overflow"></b></a>
+        <a href="#"><b class="fa-brands fa-product-hunt"></b></a>
+        <a href="#"><b class="fa-brands fa-dev"></b></a>
+        <a href="#"><b class="fa-brands fa-medium"></b></a>
+      </nav>
+      <div class="hero">
+        <div>
+          Hello
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
