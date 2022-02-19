@@ -22,20 +22,18 @@
 
       --nav-top-height: 50px;
       --nav-top-vertical-padding: 25px;
-      --nav-social-width: 100px;
-      --illustration-width: 725px;
+      --nav-social-width: 80px;
       --hero-text-font-size: 4em;
       --hero-text-sub-font-size: .5em;
-      --hero-horizontal-padding: 15vw;
+      --hero-horizontal-padding: 10vw;
       --nav-social-display: flex;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 750px) {
 
       body,
       :root {
         --nav-social-width: 0px;
-        --illustration-width: 300px;
         --hero-horizontal-padding: 5vw;
 
         --nav-social-display: none;
@@ -48,7 +46,6 @@
       :root {
         --hero-text-font-size: 3em;
         --nav-social-width: 0px;
-        --illustration-width: 200px;
         --hero-horizontal-padding: 2vw;
 
         --nav-social-display: none;
@@ -133,7 +130,9 @@
     }
 
     #illustration {
-      width: var(--illustration-width);
+      width: calc(100vw - var(--nav-social-width) - (var(--hero-horizontal-padding) * 2));
+      max-width: 650px;
+      max-height: 100%;
     }
 
     section {
