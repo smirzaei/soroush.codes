@@ -38,7 +38,7 @@ Also I'll be skipping the obvious parts such as how to install VS Code or the Go
 
 I highly recommend using [`golangci-lint`](https://golangci-lint.run). It's very vast, and combines multiple lint tools including [`staticcheck`](https://staticcheck.io) which is one of my favorite tools and [is enabled by default](https://golangci-lint.run/usage/linters).
 
-Enabling it on VS Code is just as easy as going to the settings and selecting `golangci-lint` for your Go lint tool. Or you can edit the `settings.json` file (type open settings (JSON) in the command pallette) and adding the following line:
+Enabling it on VS Code is just as easy as going to the settings and selecting `golangci-lint` for your Go lint tool. Or you can edit the `settings.json` file (type "open settings (JSON)" in the command palette) and adding the following line:
 
 ```JSON
 {
@@ -80,7 +80,7 @@ go install github.com/segmentio/golines@latest
 
 Then install [`Run On Save`](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension for VS code, which allows you to run a command when a file is saved.
 
-Now open `settings.json` file (type "Open settings (JSON) in the command pallette) and add the following config:
+Now open `settings.json` file (type "Open settings (JSON)" in the command palette) and add the following config:
 
 ```JSON
 {
@@ -99,10 +99,8 @@ The default behavior, shortens the lines that are longer than 100 columns. If yo
 
 ## Finally, a list of extensions that I find useful (in no particular order)
 
-* [Ayu](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu) (The theme I'm currently using)
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 * [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-* [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) (The theme I used to use)
 * [Lowlight Go Errors](https://marketplace.visualstudio.com/items?itemName=ohanedan.lowlight-go-errors) (It reduces a lot of clutter)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 * [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
