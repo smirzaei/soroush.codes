@@ -1,7 +1,0 @@
-baseURL = 'https://soroush.codes/'
-languageCode = 'en-us'
-title = 'Soroush Mirzaei'
-theme = "PaperMod"
-
-enableRobotsTXT = true
-googleAnalytics = "G-977ZKYCJM1"
