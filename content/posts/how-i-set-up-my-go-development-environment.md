@@ -1,6 +1,6 @@
 ---
 title: "How I set up my Go development environment"
-date: 2022-05-26T16:11
+date: 2022-05-26
 # weight: 1
 # aliases: ["/first"]
 tags: ["Go", "environment"]
